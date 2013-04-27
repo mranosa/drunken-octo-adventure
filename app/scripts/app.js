@@ -11,6 +11,10 @@ var drunkenOctoAdventureApp = angular.module('drunkenOctoAdventureApp', [])
         templateUrl: 'views/item.html',
         controller: 'ItemCtrl'
       })
+      .when('/pitch', {
+        templateUrl: 'views/pitch.html',
+        controller: 'PitchCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
